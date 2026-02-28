@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetLove - Contato | Fale Conosco</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/shared.css">
+  <link rel="stylesheet" href="assets/css/stylesContact.css">
+</head>
+<body class="page-top">
+
+  <!-- CONTACT HERO -->
+  <section class="contact-hero">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-envelope"></i> Fale Conosco</div>
+        <h1 class="section-title">Estamos aqui para <span>ajudar</span> você e seu pet</h1>
+        <p class="section-subtitle">Dúvidas, sugestões, agendamentos ou só para bater um papo sobre pets? Escolha o canal que preferir!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT CHANNELS -->
+  <section class="channels-section">
+    <div class="container">
+      <div class="channels-grid">
+        <div class="channel-card animate-on-scroll" data-delay="100">
+          <div class="channel-icon-wrap" style="background:linear-gradient(135deg,#25D366,#128C7E)">
+            <span><i class="fa-brands fa-whatsapp"></i></span>
+          </div>
+          <h3>WhatsApp</h3>
+          <p>Atendimento rápido pelo WhatsApp das 8h às 20h, todos os dias!</p>
+          <a href="https://wa.me/5511999998888" class="channel-btn whatsapp" target="_blank">Iniciar Conversa</a>
+        </div>
+
+        <div class="channel-card animate-on-scroll" data-delay="200">
+          <div class="channel-icon-wrap" style="background:linear-gradient(135deg,var(--orange),var(--yellow))">
+            <span><i class="fa-solid fa-phone"></i></span>
+          </div>
+          <h3>Telefone</h3>
+          <p>Ligue para nós e fale diretamente com nossa equipe especializada.</p>
+          <a href="tel:+551199998888" class="channel-btn phone">(11) 9 9999-8888</a>
+        </div>
+
+        <div class="channel-card animate-on-scroll" data-delay="300">
+          <div class="channel-icon-wrap" style="background:linear-gradient(135deg,#FF4E50,#FC913A)">
+            <span><i class="fa-solid fa-envelope"></i></span>
+          </div>
+          <h3>E-mail</h3>
+          <p>Envie sua mensagem e respondemos em até 24 horas úteis.</p>
+          <a href="mailto:contato@petlove.com.br" class="channel-btn email">Enviar E-mail</a>
+        </div>
+
+        <div class="channel-card animate-on-scroll" data-delay="400">
+          <div class="channel-icon-wrap" style="background:linear-gradient(135deg,#4CAF50,#81C784)">
+            <span><i class="fa-solid fa-location-dot"></i></span>
+          </div>
+          <h3>Visita Presencial</h3>
+          <p>Venha nos visitar! Teremos prazer em atender você e seu pet pessoalmente.</p>
+          <a href="#map" class="channel-btn visit">Ver Localização</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CONTACT AREA -->
+  <section class="contact-main" style="background:var(--gray-light)">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap animate-on-scroll">
+          <div class="form-header">
+            <h2 class="section-title" style="text-align:left;margin-bottom:0.5rem">Envie uma <span>mensagem</span></h2>
+            <p style="color:var(--text-mid);line-height:1.6">Preencha o formulário abaixo e nossa equipe entrará em contato o mais breve possível.</p>
+          </div>
+
+          <form id="contact-form" class="contact-form">
+            <div class="form-row-2">
+              <div class="form-group">
+                <label>Seu nome *</label>
+                <input type="text" placeholder="Nome completo" required>
+              </div>
+              <div class="form-group">
+                <label>E-mail *</label>
+                <input type="email" placeholder="seu@email.com.br" required>
+              </div>
+            </div>
+            <div class="form-row-2">
+              <div class="form-group">
+                <label>Telefone</label>
+                <input type="tel" placeholder="(11) 9 9999-9999">
+              </div>
+              <div class="form-group">
+                <label>Assunto *</label>
+                <select required>
+                  <option value="">Selecione o assunto</option>
+                  <option>Dúvida sobre serviços</option>
+                  <option>Dúvida sobre produtos</option>
+                  <option>Agendamento</option>
+                  <option>Adoção</option>
+                  <option>Elogio</option>
+                  <option>Reclamação</option>
+                  <option>Parceria</option>
+                  <option>Outro</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Nome do seu pet</label>
+              <input type="text" placeholder="Opcional – nos fale sobre seu bichinho!">
+            </div>
+            <div class="form-group">
+              <label>Mensagem *</label>
+              <textarea placeholder="Escreva sua mensagem aqui... Quanto mais detalhes você nos der, melhor poderemos ajudar!" rows="5" required></textarea>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" id="newsletter-check">
+              <label for="newsletter-check">Quero receber dicas e promoções pelo e-mail <i class="fa-solid fa-paw"></i></label>
+            </div>
+            <button type="submit" class="btn-primary" style="width:100%;justify-content:center;font-size:1.05rem;padding:1rem">
+              <i class="fa-solid fa-envelope"></i> Enviar Mensagem
+            </button>
+          </form>
+        </div>
+
+        <!-- Info & Hours -->
+        <div class="contact-info-panel animate-on-scroll" data-delay="200">
+          <!-- Info Cards -->
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4>Endereço</h4>
+              <p>Rua dos Pets, 123 – Centro<br>São Paulo, SP – CEP 01310-000</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <h4>Telefone & WhatsApp</h4>
+              <p>(11) 9 9999-8888<br>(11) 3333-4444</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <h4>E-mail</h4>
+              <p>contato@petlove.com.br<br>adocao@petlove.com.br</p>
+            </div>
+          </div>
+
+          <!-- Hours -->
+          <div class="hours-card">
+            <h4 class="hours-title"><i class="fa-solid fa-clock"></i> Horário de Funcionamento</h4>
+            <div class="hours-list">
+              <div class="hours-item">
+                <span class="day-range">Segunda a Sexta</span>
+                <span class="hours-val open">8h – 18h <i class="fa-solid fa-check"></i></span>
+              </div>
+              <div class="hours-item">
+                <span class="day-range">Sábados</span>
+                <span class="hours-val open">8h – 17h <i class="fa-solid fa-check"></i></span>
+              </div>
+              <div class="hours-item">
+                <span class="day-range">Domingos</span>
+                <span class="hours-val partial">9h – 14h <i class="fa-solid fa-bolt"></i> Limitado</span>
+              </div>
+              <div class="hours-item">
+                <span class="day-range">Feriados</span>
+                <span class="hours-val closed">Fechado <i class="fa-solid fa-xmark"></i></span>
+              </div>
+            </div>
+            <div class="emergency-note">
+              <i class="fa-solid fa-triangle-exclamation"></i> Emergências veterinárias: atendemos 24h via WhatsApp
+            </div>
+          </div>
+
+          <!-- Social -->
+          <div class="social-card">
+            <h4>Siga o PetLove nas redes</h4>
+            <div class="social-links">
+              <a href="#" class="social-link-btn instagram"><i class="fa-brands fa-instagram"></i> Instagram</a>
+              <a href="#" class="social-link-btn facebook"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+              <a href="#" class="social-link-btn youtube"><i class="fa-brands fa-youtube"></i> YouTube</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHEDULE SECTION (id=schedule for navbar link) -->
+  <section class="sched-section" id="schedule">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-tag"><i class="fa-solid fa-scissors"></i> Agendamento Rápido</div>
+        <h2 class="section-title">Agende Banho & Tosa <span>agora mesmo</span></h2>
+        <p class="section-subtitle">Em menos de 2 minutos você agenda o banho do seu pet. Super fácil!</p>
+      </div>
+
+      <div class="quick-schedule animate-on-scroll">
+        <form id="schedule-form" class="quick-schedule-form">
+          <div class="qs-step">
+            <span class="qs-num">1</span>
+            <div class="form-group">
+              <label>Seu nome</label>
+              <input type="text" placeholder="Nome do tutor" required>
+            </div>
+          </div>
+          <div class="qs-step">
+            <span class="qs-num">2</span>
+            <div class="form-group">
+              <label>Pet & Raça</label>
+              <input type="text" placeholder="Ex: Max – Golden Retriever" required>
+            </div>
+          </div>
+          <div class="qs-step">
+            <span class="qs-num">3</span>
+            <div class="form-group">
+              <label>Tamanho</label>
+              <select>
+                <option>Pequeno (até 10kg)</option>
+                <option>Médio (10–25kg)</option>
+                <option>Grande (acima 25kg)</option>
+              </select>
+            </div>
+          </div>
+          <div class="qs-step">
+            <span class="qs-num">4</span>
+            <div class="form-group">
+              <label>Data</label>
+              <input type="date" required>
+            </div>
+          </div>
+          <div class="qs-step">
+            <span class="qs-num">5</span>
+            <div class="form-group">
+              <label>Horário</label>
+              <select required>
+                <option value="">Selecionar</option>
+                <option>08:00</option>
+                <option>09:00</option>
+                <option>10:00</option>
+                <option>11:00</option>
+                <option>13:00</option>
+                <option>14:00</option>
+                <option>15:00</option>
+                <option>16:00</option>
+              </select>
+            </div>
+          </div>
+          <div class="qs-action">
+            <button type="submit" class="btn-primary"><i class="fa-solid fa-scissors"></i> Confirmar Agendamento</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP PLACEHOLDER -->
+  <section class="map-section" id="map" style="padding:0">
+    <div class="map-placeholder">
+      <div class="map-overlay-content">
+        <span class="map-pin"><i class="fa-solid fa-location-dot"></i></span>
+        <h3>Rua dos Pets, 123 – Centro, São Paulo/SP</h3>
+        <p>Próximo ao metrô Sé • Estacionamento conveniado</p>
+        <a href="https://maps.google.com" target="_blank" class="btn-primary" style="margin-top:1rem">
+          Abrir no Google Maps
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section" style="background:var(--gray-light)">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-tag"><i class="fa-solid fa-circle-question"></i> FAQ</div>
+        <h2 class="section-title">Perguntas <span>frequentes</span></h2>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item animate-on-scroll" data-delay="100">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Como faço para agendar um serviço?
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Você pode agendar diretamente pelo nosso site usando o formulário acima, pelo WhatsApp (11) 9 9999-8888, por telefone ou presencialmente na loja. Temos atendimento de segunda a sábado das 8h às 18h.</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll" data-delay="150">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Qual é a política de cancelamento?
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Cancelamentos realizados com mais de 24 horas de antecedência são gratuitos. Para cancelamentos com menos de 24h, cobramos uma taxa de 30% do valor do serviço.</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll" data-delay="200">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Meu pet precisa estar vacinado para usar os serviços?
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Sim! Para o bem-estar de todos os pets, exigimos que os animais estejam com a vacinação em dia, especialmente as vacinas antirrábica e múltipla. Por favor, traga a carteirinha na primeira visita.</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll" data-delay="250">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            O pet shop aceita entrega/retirada?
+            <span class="faq-arrow">▼</span>
+          </button>
+          <div class="faq-answer">
+            <p>Sim! Fazemos entrega de produtos em toda a cidade de São Paulo. Para compras acima de R$ 150, o frete é grátis. A entrega é feita em até 3 dias úteis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section style="padding:3rem 0">
+    <div class="newsletter-section animate-on-scroll">
+      <h2><i class="fa-solid fa-paw"></i> Fique sempre conectado!</h2>
+      <p>Receba dicas, promoções e novidades direto no seu e-mail.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Seu melhor e-mail..." required>
+        <button type="submit">Inscrever</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Contact form
+    document.getElementById('contact-form')?.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const btn = this.querySelector('button[type="submit"]');
+      btn.innerHTML = '<i class="fa-solid fa-check"></i> Mensagem enviada! Responderemos em breve.';
+      btn.style.background = 'linear-gradient(135deg,#4CAF50,#388E3C)';
+      setTimeout(() => {
+        btn.innerHTML = '<i class="fa-solid fa-envelope"></i> Enviar Mensagem';
+        btn.style.background = '';
+        this.reset();
+      }, 4000);
+    });
+
+    // FAQ toggle
+    function toggleFaq(btn) {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    }
+
+    // Set min date
+    document.querySelectorAll('input[type="date"]').forEach(inp => {
+      inp.min = new Date().toISOString().split('T')[0];
+    });
+  </script>
+</body>
+</html>

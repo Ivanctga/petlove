@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetLove - Blog | Dicas e Cuidados para seu Pet</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/shared.css">
+  <link rel="stylesheet" href="assets/css/stylesBlog.css">
+</head>
+<body class="page-top">
+
+  <!-- BLOG HERO -->
+  <section class="blog-hero">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-newspaper"></i> Blog PetLove</div>
+        <h1 class="section-title">Dicas e cuidados para o seu <span>pet</span></h1>
+        <p class="section-subtitle">Conteúdo educativo criado por veterinários e especialistas em bem-estar animal. Porque informação é a melhor forma de cuidar!</p>
+        <div class="blog-search-wrap">
+          <input type="text" class="blog-search" placeholder="Buscar artigos..." id="blog-search">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG CATEGORIES -->
+  <section class="blog-cats-section" style="padding:1.5rem 2rem">
+    <div class="container">
+      <div class="blog-cat-filters" id="blog-cat-filters">
+        <button class="blog-cat-btn active" data-cat="todos"><i class="fa-solid fa-paw"></i> Todos</button>
+        <button class="blog-cat-btn" data-cat="cuidados"><i class="fa-solid fa-bath"></i> Cuidados</button>
+        <button class="blog-cat-btn" data-cat="alimentacao"><i class="fa-solid fa-bowl-food"></i> Alimentação</button>
+        <button class="blog-cat-btn" data-cat="saude"><i class="fa-solid fa-pills"></i> Saúde</button>
+        <button class="blog-cat-btn" data-cat="comportamento"><i class="fa-solid fa-graduation-cap"></i> Comportamento</button>
+        <button class="blog-cat-btn" data-cat="adocao"><i class="fa-solid fa-heart"></i> Adoção</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED POST -->
+  <section class="featured-post-section">
+    <div class="container">
+      <article class="featured-post animate-on-scroll">
+        <div class="featured-post-img">
+          <img src="assets/img/blog1.jpg" alt="Post destaque" onerror="this.src='https://placehold.co/700x420/FF914D/white?text=Blog'">
+          <div class="featured-overlay">
+            <span class="blog-cat-badge"><i class="fa-solid fa-star"></i> Em Destaque</span>
+          </div>
+        </div>
+        <div class="featured-post-content">
+          <span class="post-cat-tag cuidados"><i class="fa-solid fa-bath"></i> Cuidados</span>
+          <h2 class="featured-post-title">Como preparar seu cachorro para os calores do verão: guia completo de saúde e bem-estar</h2>
+          <p class="featured-post-excerpt">O verão pode ser uma estação perigosa para os pets, especialmente cães e gatos com pelagens mais densas. Neste guia completo, nossos veterinários explicam como identificar sinais de golpe de calor, a importância da hidratação, os melhores horários para passeio e como criar um ambiente fresco e seguro em casa para seu companheiro...</p>
+          <div class="post-meta">
+            <div class="post-author">
+              <div class="author-av">D</div>
+              <div>
+                <span class="author-nm">Dra. Carolina Mendes</span>
+                <span class="author-role">Médica Veterinária</span>
+              </div>
+            </div>
+            <div class="post-info">
+              <span><i class="fa-solid fa-calendar-days"></i> 15 Jan 2024</span>
+              <span><i class="fa-solid fa-clock"></i> 8 min de leitura</span>
+              <span><i class="fa-solid fa-eye"></i> 2.4k visualizações</span>
+            </div>
+          </div>
+          <a href="#" class="btn-primary" style="margin-top:1.5rem">Ler Artigo Completo →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- BLOG GRID -->
+  <section class="blog-main-section" style="background:var(--gray-light)">
+    <div class="container">
+      <div class="blog-layout">
+        <!-- Posts Grid -->
+        <div class="posts-grid" id="posts-grid">
+
+          <article class="post-card animate-on-scroll" data-cat="alimentacao" data-delay="100">
+            <div class="post-img">
+              <img src="assets/img/blog2.jpg" alt="Alimentação gatos" onerror="this.src='https://placehold.co/400x220/FFD166/333?text=Alimentacao'">
+              <span class="post-cat-badge alimentacao"><i class="fa-solid fa-bowl-food"></i> Alimentação</span>
+            </div>
+            <div class="post-content">
+              <span class="post-date"><i class="fa-solid fa-calendar-days"></i> 10 Jan 2024</span>
+              <h3 class="post-title">Alimentação ideal para gatos: tudo o que você precisa saber</h3>
+              <p class="post-summary">Entenda as necessidades nutricionais dos felinos, a diferença entre ração seca e úmida e como montar uma dieta equilibrada...</p>
+              <div class="post-footer">
+                <div class="post-author-sm">
+                  <div class="auth-av-sm">A</div>
+                  <span>Dr. André Lima</span>
+                </div>
+                <span class="read-time">⏱ 5 min</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card animate-on-scroll" data-cat="saude" data-delay="200">
+            <div class="post-img">
+              <img src="assets/img/blog3.jpg" alt="Vacinas pets" onerror="this.src='https://placehold.co/400x220/4CAF50/white?text=💊'">
+              <span class="post-cat-badge saude"><i class="fa-solid fa-pills"></i> Saúde</span>
+            </div>
+            <div class="post-content">
+              <span class="post-date"><i class="fa-solid fa-calendar-days"></i> 5 Jan 2024</span>
+              <h3 class="post-title">Vacinas obrigatórias para cães e gatos: calendário completo</h3>
+              <p class="post-summary">Saiba quais vacinas são essenciais, quando aplicar e como manter a carteira de vacinação em dia para proteger seu pet...</p>
+              <div class="post-footer">
+                <div class="post-author-sm">
+                  <div class="auth-av-sm">C</div>
+                  <span>Dra. Carolina Mendes</span>
+                </div>
+                <span class="read-time">⏱ 6 min</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card animate-on-scroll" data-cat="cuidados" data-delay="300">
+            <div class="post-img">
+              <img src="assets/img/blog4.jpg" alt="Higiene pet" onerror="this.src='https://placehold.co/400x220/9B59B6/white?text=Higiene'">
+              <span class="post-cat-badge cuidados"><i class="fa-solid fa-bath"></i> Cuidados</span>
+            </div>
+            <div class="post-content">
+              <span class="post-date"><i class="fa-solid fa-calendar-days"></i> 28 Dez 2023</span>
+              <h3 class="post-title">Dicas de higiene pet: escovação, banho e cuidados com as unhas</h3>
+              <p class="post-summary">Manter seu pet higienizado vai além da beleza. Veja como a higiene regular previne doenças e mantém seu bichinho saudável...</p>
+              <div class="post-footer">
+                <div class="post-author-sm">
+                  <div class="auth-av-sm">M</div>
+                  <span>Mariana Costa</span>
+                </div>
+                <span class="read-time">⏱ 4 min</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card animate-on-scroll" data-cat="comportamento" data-delay="100">
+            <div class="post-img">
+              <img src="assets/img/blog5.jpg" alt="Adestramento" onerror="this.src='https://placehold.co/400x220/FF914D/white?text=🎓'">
+              <span class="post-cat-badge comportamento"><i class="fa-solid fa-graduation-cap"></i> Comportamento</span>
+            </div>
+            <div class="post-content">
+              <span class="post-date"><i class="fa-solid fa-calendar-days"></i> 20 Dez 2023</span>
+              <h3 class="post-title">Como ensinar seu cão a se comportar: técnicas de reforço positivo</h3>
+              <p class="post-summary">O adestramento por reforço positivo é o método mais eficaz e humano. Aprenda como aplicá-lo no dia a dia com seu pet...</p>
+              <div class="post-footer">
+                <div class="post-author-sm">
+                  <div class="auth-av-sm">R</div>
+                  <span>Ricardo Souza</span>
+                </div>
+                <span class="read-time">⏱ 7 min</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card animate-on-scroll" data-cat="adocao" data-delay="200">
+            <div class="post-img">
+              <img src="assets/img/blog6.jpg" alt="Adoção" onerror="this.src='https://placehold.co/400x220/E91E63/white?text=Adocao'">
+              <span class="post-cat-badge adocao"><i class="fa-solid fa-heart"></i> Adoção</span>
+            </div>
+            <div class="post-content">
+              <span class="post-date"><i class="fa-solid fa-calendar-days"></i> 15 Dez 2023</span>
+              <h3 class="post-title">Como preparar sua casa para receber um pet adotado</h3>
+              <p class="post-summary">Adotar um pet é uma decisão linda e transformadora. Saiba como preparar o ambiente e ajudar seu novo companheiro a se adaptar...</p>
+              <div class="post-footer">
+                <div class="post-author-sm">
+                  <div class="auth-av-sm">J</div>
+                  <span>Juliana Ferreira</span>
+                </div>
+                <span class="read-time">⏱ 5 min</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card animate-on-scroll" data-cat="saude" data-delay="300">
+            <div class="post-img">
+              <img src="assets/img/blog7.jpg" alt="Saúde bucal" onerror="this.src='https://placehold.co/400x220/00BCD4/white?text=💊'">
+              <span class="post-cat-badge saude"><i class="fa-solid fa-pills"></i> Saúde</span>
+            </div>
+            <div class="post-content">
+              <span class="post-date"><i class="fa-solid fa-calendar-days"></i> 10 Dez 2023</span>
+              <h3 class="post-title">Saúde bucal do pet: como escovar os dentes do seu cão e gato</h3>
+              <p class="post-summary">A saúde bucal é frequentemente negligenciada pelos tutores. Veja como prevenir tártaro, gengivite e manter o hálito do seu pet fresco...</p>
+              <div class="post-footer">
+                <div class="post-author-sm">
+                  <div class="auth-av-sm">A</div>
+                  <span>Dr. André Lima</span>
+                </div>
+                <span class="read-time">⏱ 4 min</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="blog-sidebar">
+          <div class="blog-widget">
+            <h3 class="blog-widget-title"><i class="fa-solid fa-thumbtack"></i> Posts Populares</h3>
+            <div class="popular-posts">
+              <a href="#" class="popular-post">
+                <span class="pp-num">01</span>
+                <div class="pp-info">
+                  <span class="pp-title">Como cuidar de filhotes recém-nascidos</span>
+                  <span class="pp-views"><i class="fa-solid fa-eye"></i> 5.2k views</span>
+                </div>
+              </a>
+              <a href="#" class="popular-post">
+                <span class="pp-num">02</span>
+                <div class="pp-info">
+                  <span class="pp-title">Sintomas de ansiedade em cães</span>
+                  <span class="pp-views"><i class="fa-solid fa-eye"></i> 4.8k views</span>
+                </div>
+              </a>
+              <a href="#" class="popular-post">
+                <span class="pp-num">03</span>
+                <div class="pp-info">
+                  <span class="pp-title">Alimentação natural para gatos (BARF)</span>
+                  <span class="pp-views"><i class="fa-solid fa-eye"></i> 3.9k views</span>
+                </div>
+              </a>
+              <a href="#" class="popular-post">
+                <span class="pp-num">04</span>
+                <div class="pp-info">
+                  <span class="pp-title">Vacinas obrigatórias 2024</span>
+                  <span class="pp-views"><i class="fa-solid fa-eye"></i> 3.2k views</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="blog-widget">
+            <h3 class="blog-widget-title"><i class="fa-solid fa-tags"></i> Tags</h3>
+            <div class="blog-tags">
+              <span class="blog-tag"><i class="fa-solid fa-dog"></i> Cães</span>
+              <span class="blog-tag"><i class="fa-solid fa-cat"></i> Gatos</span>
+              <span class="blog-tag"><i class="fa-solid fa-syringe"></i> Vacinação</span>
+              <span class="blog-tag"><i class="fa-solid fa-bowl-food"></i> Nutrição</span>
+              <span class="blog-tag"><i class="fa-solid fa-scissors"></i> Tosa</span>
+              <span class="blog-tag"><i class="fa-solid fa-heart"></i> Adoção</span>
+              <span class="blog-tag"><i class="fa-solid fa-graduation-cap"></i> Treino</span>
+              <span class="blog-tag"><i class="fa-solid fa-bath"></i> Higiene</span>
+              <span class="blog-tag"><i class="fa-solid fa-temperature-half"></i> Saúde</span>
+            </div>
+          </div>
+
+          <div class="blog-widget blog-newsletter-widget">
+            <span style="font-size:2.5rem"><i class="fa-solid fa-paw"></i></span>
+            <h3>Receba novos posts!</h3>
+            <p>Assine nossa newsletter e receba dicas fresquinhas toda semana.</p>
+            <form class="mini-newsletter" onsubmit="event.preventDefault();this.querySelector('button').innerHTML='<i class=\'fa-solid fa-check\'></i> Inscrito!'">
+              <input type="email" placeholder="seu@email.com" required>
+              <button type="submit">→</button>
+            </form>
+          </div>
+
+          <div class="blog-widget">
+            <h3 class="blog-widget-title"><i class="fa-solid fa-paw"></i> Sobre o PetLove</h3>
+            <p style="color:var(--text-mid);font-size:0.9rem;line-height:1.7;margin-bottom:1rem">Somos um pet shop completo dedicado ao bem-estar e felicidade dos animais. Nossa equipe inclui veterinários, adestradores e cuidadores apaixonados.</p>
+            <a href="contact.html" class="btn-primary" style="font-size:0.85rem;padding:0.6rem 1.2rem">Falar Conosco</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section style="padding:3rem 0">
+    <div class="newsletter-section animate-on-scroll">
+      <h2><i class="fa-solid fa-paw"></i> Receba dicas toda semana!</h2>
+      <p>Nosso blog tem novidades toda semana. Não perca nenhuma!</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Seu melhor e-mail..." required>
+        <button type="submit">Inscrever</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Blog category filter
+    document.querySelectorAll('.blog-cat-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.blog-cat-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const cat = btn.dataset.cat;
+        document.querySelectorAll('.post-card').forEach(card => {
+          const show = cat === 'todos' || card.dataset.cat === cat;
+          card.style.display = show ? '' : 'none';
+        });
+      });
+    });
+
+    // Blog search
+    document.getElementById('blog-search')?.addEventListener('input', function() {
+      const q = this.value.toLowerCase();
+      document.querySelectorAll('.post-card').forEach(card => {
+        const title = card.querySelector('.post-title')?.textContent.toLowerCase() || '';
+        const summary = card.querySelector('.post-summary')?.textContent.toLowerCase() || '';
+        card.style.display = (title.includes(q) || summary.includes(q)) ? '' : 'none';
+      });
+    });
+  </script>
+</body>
+</html>

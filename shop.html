@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetLove - Shop | Produtos para seu Pet</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/shared.css">
+  <link rel="stylesheet" href="assets/css/stylesShop.css">
+</head>
+<body class="page-top">
+
+  <!-- SHOP HERO -->
+  <section class="shop-hero">
+    <div class="container">
+      <div class="section-header" style="margin-bottom:0">
+        <div class="section-tag"><i class="fa-solid fa-cart-shopping"></i> Nossa Loja</div>
+        <h1 class="section-title">Tudo para o seu <span>pet</span></h1>
+        <p class="section-subtitle">Mais de 200 produtos selecionados com qualidade e amor para o bem-estar do seu bichinho!</p>
+      </div>
+    </div>
+    <div class="shop-hero-paws"><i class="fa-solid fa-paw"></i><i class="fa-solid fa-paw"></i><i class="fa-solid fa-paw"></i><i class="fa-solid fa-paw"></i><i class="fa-solid fa-paw"></i></div>
+  </section>
+
+  <!-- PROMO STRIP -->
+  <div class="promo-strip">
+    <div class="promo-strip-inner">
+      <span><i class="fa-solid fa-fire"></i> FRETE GRÁTIS acima de R$ 150</span>
+      <span><i class="fa-solid fa-star"></i> +500 avaliações positivas</span>
+      <span><i class="fa-solid fa-gift"></i> Cupom PETLOVE15 = 15% OFF</span>
+      <span><i class="fa-solid fa-truck"></i> Entrega em até 3 dias úteis</span>
+      <span><i class="fa-solid fa-fire"></i> FRETE GRÁTIS acima de R$ 150</span>
+      <span><i class="fa-solid fa-star"></i> +500 avaliações positivas</span>
+    </div>
+  </div>
+
+  <!-- SHOP MAIN -->
+  <section class="shop-section">
+    <div class="container">
+      <div class="shop-layout">
+
+        <!-- Sidebar / Filters -->
+        <aside class="shop-sidebar">
+          <div class="sidebar-widget">
+            <h3 class="widget-title">Categorias</h3>
+            <ul class="cat-filter-list" id="cat-filter">
+              <li><button class="cat-filter-btn active" data-cat="todos"><i class="fa-solid fa-paw"></i> Todos <span>36</span></button></li>
+              <li><button class="cat-filter-btn" data-cat="racao"><i class="fa-solid fa-bowl-food"></i> Ração <span>6</span></button></li>
+              <li><button class="cat-filter-btn" data-cat="brinquedos"><i class="fa-solid fa-gamepad"></i> Brinquedos <span>7</span></button></li>
+              <li><button class="cat-filter-btn" data-cat="acessorios"><i class="fa-solid fa-ribbon"></i> Acessórios <span>7</span></button></li>
+              <li><button class="cat-filter-btn" data-cat="camas"><i class="fa-solid fa-bed"></i> Camas <span>5</span></button></li>
+              <li><button class="cat-filter-btn" data-cat="roupinhas"><i class="fa-solid fa-shirt"></i> Roupinhas <span>5</span></button></li>
+              <li><button class="cat-filter-btn" data-cat="higiene"><i class="fa-solid fa-bath"></i> Higiene <span>6</span></button></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-widget">
+            <h3 class="widget-title">Espécie</h3>
+            <div class="species-btns">
+              <button class="species-btn active" data-species="todos"><i class="fa-solid fa-paw"></i> Todos</button>
+              <button class="species-btn" data-species="caes"><i class="fa-solid fa-dog"></i> Cães</button>
+              <button class="species-btn" data-species="gatos"><i class="fa-solid fa-cat"></i> Gatos</button>
+            </div>
+          </div>
+
+          <div class="sidebar-widget">
+            <h3 class="widget-title">Preço</h3>
+            <div class="price-range">
+              <input type="range" id="price-range" min="0" max="500" value="500" class="range-input">
+              <div class="price-labels">
+                <span>R$ 0</span>
+                <span id="price-max-label">R$ 500</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar-widget">
+            <h3 class="widget-title">Avaliação</h3>
+            <div class="rating-filters">
+              <label class="rating-filter"><input type="radio" name="rating" value="5"> <span class="stars">★★★★★</span></label>
+              <label class="rating-filter"><input type="radio" name="rating" value="4"> <span class="stars">★★★★</span>☆</label>
+              <label class="rating-filter"><input type="radio" name="rating" value="3"> <span class="stars">★★★</span>☆☆</label>
+              <label class="rating-filter"><input type="radio" name="rating" value="0" checked> Todos</label>
+            </div>
+          </div>
+
+          <div class="sidebar-promo">
+            <span><i class="fa-solid fa-fire"></i></span>
+            <h4>Promoção Especial</h4>
+            <p>Use <strong>PETLOVE30</strong> e ganhe 30% OFF em brinquedos!</p>
+          </div>
+        </aside>
+
+        <!-- Products Area -->
+        <div class="products-area">
+          <div class="shop-toolbar">
+            <span class="products-count" id="products-count">Mostrando 12 produtos</span>
+            <div class="toolbar-right">
+              <select class="sort-select" id="sort-select">
+                <option value="default">Ordenar por</option>
+                <option value="price-asc">Menor preço</option>
+                <option value="price-desc">Maior preço</option>
+                <option value="rating">Melhor avaliado</option>
+                <option value="name">Nome A-Z</option>
+              </select>
+              <div class="view-toggle">
+                <button class="view-btn active" data-view="grid" onclick="setView('grid')">⊞</button>
+                <button class="view-btn" data-view="list" onclick="setView('list')">≡</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="products-grid shop-grid" id="products-container">
+            <!-- Products injected by JS -->
+          </div>
+
+          <div class="pagination">
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn">→</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section style="padding:3rem 0">
+    <div class="newsletter-section">
+      <h2><i class="fa-solid fa-paw"></i> Receba ofertas exclusivas!</h2>
+      <p>Inscreva-se e seja o primeiro a saber das nossas promoções e lançamentos.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Seu melhor e-mail..." required>
+        <button type="submit">Inscrever</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Product Modal -->
+  <div class="modal-overlay" id="product-modal" style="display:none" onclick="if(event.target===this)closeProductModal()">
+    <div class="modal-panel">
+      <div class="modal-img-wrap">
+        <img src="" alt="" class="modal-img">
+      </div>
+      <h2 class="modal-name"></h2>
+      <div class="modal-price"></div>
+      <p class="modal-desc"></p>
+      <div class="modal-actions">
+        <button class="btn-primary modal-add-cart"><i class="fa-solid fa-cart-shopping"></i> Adicionar ao Carrinho</button>
+        <button class="btn-secondary" onclick="closeProductModal()">Fechar</button>
+      </div>
+      <button class="close-btn" onclick="closeProductModal()" style="position:absolute;top:1rem;right:1rem" aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+  </div>
+
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/shop.js"></script>
+</body>
+</html>
